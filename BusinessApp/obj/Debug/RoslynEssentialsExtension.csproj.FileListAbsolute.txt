@@ -1,0 +1,5 @@
+C:\Code\Demos\RoslynEssentialsExtension\bin\Debug\RoslynEssentialsExtension.dll
+C:\Code\Demos\RoslynEssentialsExtension\bin\Debug\RoslynEssentialsExtension.pdb
+C:\Code\Demos\RoslynEssentialsExtension\obj\Debug\RoslynEssentialsExtension.csprojResolveAssemblyReference.cache
+C:\Code\Demos\RoslynEssentialsExtension\obj\Debug\RoslynEssentialsExtension.dll
+C:\Code\Demos\RoslynEssentialsExtension\obj\Debug\RoslynEssentialsExtension.pdb

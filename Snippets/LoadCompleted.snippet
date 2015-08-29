@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>LoadCompleted Event Handler</Title>
+      <Shortcut>lc</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[
+            if (e.Uri == null)
+            {
+                authCode = String.Empty;
+                DialogResult = false;
+                this.Close();
+            }
+
+            if (e.Uri.AbsoluteUri.Contains("code="))
+            {
+                authCode = Regex.Split(e.Uri.AbsoluteUri, "code=")[1];
+                DialogResult = true;
+                this.Close();
+            }
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+
+

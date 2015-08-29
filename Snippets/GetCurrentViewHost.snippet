@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>GetCurrentViewHost()</Title>
+      <Shortcut>gcvh</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[
+private IWpfTextViewHost GetCurrentViewHost()
+{
+var textManager = this.ServiceProvider.GetService(typeof(SVsTextManager)) as IVsTextManager;
+
+IVsTextView textView = null;
+int mustHaveFocus = 1;
+textManager.GetActiveView(mustHaveFocus, null, out textView);
+
+var userData = textView as IVsUserData;
+if (userData == null)
+{
+return null;
+} else
+{
+Guid guidViewHost = DefGuidList.guidIWpfTextViewHost;
+object holder;
+userData.GetData(ref guidViewHost, out holder);
+var viewHost = (IWpfTextViewHost)holder;
+
+return viewHost;
+
+}
+}
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+
+
