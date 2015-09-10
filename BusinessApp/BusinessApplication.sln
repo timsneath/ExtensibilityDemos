@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLibrary", "BusinessLibrary.csproj", "{61A0A5F8-9B96-4E76-A231-17574746C62A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E12F49C2-0353-45A7-832C-D1B9F0BD4270}"
-	ProjectSection(SolutionItems) = preProject
-		..\.gitignore = ..\.gitignore
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
