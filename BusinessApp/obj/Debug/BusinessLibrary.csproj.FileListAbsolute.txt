@@ -1,5 +1,5 @@
-C:\Code\Demos\RoslynEssentialsExtension\bin\Debug\BusinessApplication.dll
-C:\Code\Demos\RoslynEssentialsExtension\bin\Debug\BusinessApplication.pdb
-C:\Code\Demos\RoslynEssentialsExtension\obj\Debug\BusinessLibrary.csprojResolveAssemblyReference.cache
-C:\Code\Demos\RoslynEssentialsExtension\obj\Debug\BusinessApplication.dll
-C:\Code\Demos\RoslynEssentialsExtension\obj\Debug\BusinessApplication.pdb
+C:\Git\ExtensibilityDemos\BusinessApp\bin\Debug\BusinessApplication.dll
+C:\Git\ExtensibilityDemos\BusinessApp\bin\Debug\BusinessApplication.pdb
+C:\Git\ExtensibilityDemos\BusinessApp\obj\Debug\BusinessLibrary.csprojResolveAssemblyReference.cache
+C:\Git\ExtensibilityDemos\BusinessApp\obj\Debug\BusinessApplication.dll
+C:\Git\ExtensibilityDemos\BusinessApp\obj\Debug\BusinessApplication.pdb
