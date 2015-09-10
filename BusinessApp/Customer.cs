@@ -8,15 +8,15 @@ namespace BusinessLibrary
 {
     public class Customer
     {
-        public string FirstName { get; }
-        public string LastName { get; }
-        public DateTime AccountNumber { get; }
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+        public DateTime AccountNumber { get; private set; }
 
         public Customer(string firstName, string lastName, DateTime accountExpiry)
         {
             if (accountExpiry == null)
             {
-                throw new ArgumentNullException(nameof(accountExpiry));
+                throw new ArgumentNullException("accountExpiry");
             }
 
             this.FirstName = firstName;
@@ -24,6 +24,9 @@ namespace BusinessLibrary
             this.AccountNumber = accountExpiry;
         }
 
-        public override string ToString() => $"{FirstName} {LastName}";
+        public override string ToString()
+        {
+            return String.Format("{0} {1}", this.FirstName, this.LastName);
+        }
     }
 }
