@@ -53,6 +53,7 @@ Microsoft.VisualStudio.Text.UI.Wpf
 ```
 
  - Edit Menu Callback
+ - 
  ```
    var viewHost = GetCurrentViewHost();
    var filename = Path.GetFileName(GetCurrentFilename(viewHost));
@@ -71,6 +72,7 @@ Microsoft.VisualStudio.Text.UI.Wpf
  - NuGet Package Manager for Pierre's GistsApi
  - Add app.config secrets from \code\snippets
  - Add code
+ - 
   ```
        var gistClient = new GistsApi.GistClient(Properties.Settings.Default.ClientID,
            Properties.Settings.Default.ClientSecret, "GistsForVisualStudio/1.0");
@@ -79,7 +81,8 @@ Microsoft.VisualStudio.Text.UI.Wpf
 ```
  - Edit message box to show result.html_url
  - Fix strong naming issue with Nivot. 
-   Copy location of GistsAPI.dll to clipboard and then:
+ - Copy location of GistsAPI.dll to clipboard and then:
+
    ```
 PM> Install-Package Nivot.StrongNaming
 PM> $key = Import-StrongNameKeyPair <Key.snk>
@@ -92,11 +95,14 @@ PM> Set-StrongName -AssemblyFile $assembly -KeyPair $key
 ## Demo 5 - Adding authorization
  - Create a new WPF dialog, explain changes here
  - Add 
+ 
  ```
 <WebBrowser x:Name="webBrowser" LoadCompleted="webBrowser_LoadCompleted" />
-       ```
+```
+
  - Add to LoadCompleted event handler the snippet lc
  - In MenuItemCallback(), insert the following under gistClient instantiation:
+
  ```
 AuthorizeDialog authDialog = new AuthorizeDialog();
 authDialog.webBrowser.Navigate(gistClient.AuthorizeUrl);
@@ -104,7 +110,7 @@ authDialog.ShowDialog();
 if ((bool)authDialog.DialogResult == true)
 {
       await gistClient.Authorize(authDialog.authCode);
-           ```
+```
  - be sure to fix the closing brace
 
 ## Demo 6 - Finesse with some dialogs
